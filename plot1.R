@@ -13,4 +13,4 @@ DT2 <- mutate(SmallDT, tim = as.POSIXct(strptime(paste(Date,Time),"%d/%m/%Y %H:%
 png(filename="plot1.png", width=480, height=480)
 par(oma=c(2,2,2,1))
 hist(DT2$Global_active_power, col="red", xlab="Global Active Power (kilowatts)", main = "Global Active Power")
-dev.off()
+dev.off() 
